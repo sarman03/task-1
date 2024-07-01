@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task project</title>
+    <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="header">Business Quant</h1>
+    <div class="container">
+        <div id="filter-container">
+            <div class="filter-group">
+                <select class="field-select select2">
+                    <option value="" disabled selected>Select Field</option>
+                </select>
+                <select class="operator-select select2">
+                    <option value="greater">Greater than</option>
+                    <option value="less">Less than</option>
+                </select>
+                <input type="number" class="value-input" placeholder="Enter value">
+                <button class="remove-filter-button">Remove</button>
+            </div>
+        </div>
+        <button id="add-filter-button">Add Filter</button>
+        <button id="apply-filters-button">Apply Filters</button>
+    </div>
+    <table id="data-table" class="display">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Ticker</th>
+                <th>Sector</th>
+                <th>Industry</th>
+                <th>Revenue</th>
+                <th>GP</th>
+                <th>FCF</th>
+                <th>Capex</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

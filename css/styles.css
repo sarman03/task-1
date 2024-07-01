@@ -1,0 +1,72 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f7f7f7; 
+}
+
+.header {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+
+.select2-container, .select2-dropdown {
+    width: 200px;
+}
+
+.filter-group {
+    margin-bottom: 10px;
+}
+
+.filter-group select, .filter-group input, .filter-group button {
+    margin: 5px;
+    padding: 10px; 
+    font-size: 14px;
+}
+
+#add-filter-button, #apply-filters-button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px; 
+    border-radius: 5px;
+    margin: 10px 5px;
+}
+
+.remove-filter-button {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#data-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; 
+}
+
+#data-table th {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+}
